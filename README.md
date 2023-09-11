@@ -1,24 +1,79 @@
 # DeepScannerSettings
-Allows you to change the size and node settings for deep ore veins
+
+![Image](https://i.imgur.com/buuPQel.png)
 
-MIT License
+Update of Neceross mod https://steamcommunity.com/sharedfiles/filedetails/?id=2088979675
 
-Copyright (c) 2020 Billy Barnes
+![Image](https://i.imgur.com/pufA0kM.png)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+	
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Now you can customize the deep ore settings when using a **ground penetrating scanner** to deep drill.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+
+![Image](https://i.imgur.com/g69KRUw.png)
+
+
+Through the settings menu you can set the following characteristics of each deep ore in your game (including mods.)
+
+
+
+- **Commonality:** how rare or common a resource should be compared to other resources. A weighted scale.
+- **Resource amount:** set how much of each ore your colonists dig up each digging cycle.
+- **Vein size:** alter how small or big the size of each ore vein can be
+
+
+
+
+![Image](https://i.imgur.com/ldroDjl.png)
+
+
+Thank you to **Proxyer** for the idea and motivation! This mod is dedicated to you.
+
+
+# Translations
+
+Japanese - Proxyer
+
+
+![Image](https://i.imgur.com/36HgYSk.gif)
+
+
+
+![Image](https://i.imgur.com/2Zpv4mk.png)
+
+
+![Image](https://i.imgur.com/NpuFU7v.png)
+
+
+**Github:** https://github.com/Neceros/DeepScannerSettings
+
+![Image](https://i.imgur.com/s3KRLlu.gif)
+
+
+**Get help, Ask questions, Give suggestions:**
+https://discord.gg/AvV7DT5]![Image](https://i.imgur.com/lkEpF5w.png)
+
+
+**My mods:**
+https://steamcommunity.com/id/TheBigN/myworkshopfiles/?appid=294100&amp;p=1&amp;numperpage=30]![Image](https://i.imgur.com/MD0xY84.png)
+
+
+*MIT License; Copyright (c) 2020 Billy Barnes*
+
+![Image](https://i.imgur.com/PwoNOj4.png)
+
+
+
+-  See if the the error persists if you just have this mod and its requirements active.
+-  If not, try adding your other mods until it happens again.
+-  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  For best support, please use the Discord-channel for error-reporting.
+-  Do not report errors by making a discussion-thread, I get no notification of that.
+-  If you have the solution for a problem, please post it to the GitHub repository.
+
+
+
+https://steamcommunity.com/sharedfiles/filedetails/changelog/]![Image](https://img.shields.io/github/v/release/emipa606/DeepScannerSettings?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
+
