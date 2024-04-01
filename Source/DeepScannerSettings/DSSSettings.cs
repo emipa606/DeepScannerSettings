@@ -5,13 +5,13 @@ namespace DeepScannerSettings;
 
 public class DSSSettings : ModSettings
 {
-    public static List<string> DeepOreDefNames = new List<string>();
-    public static List<float> Commonality = new List<float>();
-    public static readonly List<float> VanillaCommonality = new List<float>();
-    public static List<int> MinedAmountPerChunk = new List<int>();
-    public static readonly List<int> VanillaMinedAmountPerChunk = new List<int>();
-    public static List<IntRange> VeinSizeRange = new List<IntRange>();
-    public static readonly List<IntRange> VanillaVeinSizeRange = new List<IntRange>();
+    public static List<string> DeepOreDefNames = [];
+    public static List<float> Commonality = [];
+    public static readonly List<float> VanillaCommonality = [];
+    public static List<int> MinedAmountPerChunk = [];
+    public static readonly List<int> VanillaMinedAmountPerChunk = [];
+    public static List<IntRange> VeinSizeRange = [];
+    public static readonly List<IntRange> VanillaVeinSizeRange = [];
 
     public static void ClearSettings()
     {

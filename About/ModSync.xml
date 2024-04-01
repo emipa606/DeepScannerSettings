@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>0b58b078-9f2d-4dd1-9e72-4f8e7dabbee7</ID>
   <ModName>Deep Scanner Settings (Continued)</ModName>
-  <Version>1.4.1</Version>
+  <Version>1.5.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,8 +12,3 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
-
-
