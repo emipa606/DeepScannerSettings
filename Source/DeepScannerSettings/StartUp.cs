@@ -9,12 +9,12 @@ public static class StartUp
     static StartUp()
     {
         // Loads right before main menu
-        SetOriginalValues();
+        setOriginalValues();
 
         DSSMod.UpdateChanges();
     }
 
-    public static void SetOriginalValues()
+    private static void setOriginalValues()
     {
         var oreList = DefDatabase<ThingDef>.AllDefs.Where(o => o.deepCommonality > 0).ToList();
 

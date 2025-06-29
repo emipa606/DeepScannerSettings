@@ -7,7 +7,7 @@ namespace DeepScannerSettings;
 public class DSSMod : Mod
 {
     private static string currentVersion;
-    public Vector2 scrollPosition;
+    private Vector2 scrollPosition;
 
     private DSSSettings settings;
 
@@ -19,7 +19,7 @@ public class DSSMod : Mod
 
     public override void DoSettingsWindowContents(Rect canvas)
     {
-        var addHeight = 25f;
+        const float addHeight = 25f;
 
         if (Widgets.ButtonText(new Rect(canvas.x + (canvas.width - 100f), canvas.y, 100f, 20f),
                 "DSS.reset".Translate()))

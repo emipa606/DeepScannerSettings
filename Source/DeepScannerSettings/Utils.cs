@@ -6,7 +6,7 @@ namespace DeepScannerSettings;
 [StaticConstructorOnStartup]
 public static class Utils
 {
-    public static Color textColor = Color.white;
+    private static readonly Color textColor = Color.white;
 
     public static void Settings_IntegerBox(this Listing_Standard lister, string text, ref int value, float labelLength,
         float padding, int min = int.MinValue, int max = int.MaxValue)
@@ -73,16 +73,9 @@ public static class Utils
 
     public static string StringToTitleCase(string text)
     {
-        if (text.Length == 1)
+        return text.Length switch
         {
-            return text.ToUpper();
-        }
-
-        if (text.Length > 1)
-        {
-            return char.ToUpper(text[0]) + text.Substring(1);
-        }
-
-        return text;
+            1 => text.ToUpper(), > 1 => char.ToUpper(text[0]) + text[1..], _ => text
+        };
     }
 }
