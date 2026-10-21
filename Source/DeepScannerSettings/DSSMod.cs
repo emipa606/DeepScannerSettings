@@ -17,11 +17,11 @@ public class DSSMod : Mod
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(con.ModMetaData);
     }
 
-    public override void DoSettingsWindowContents(Rect canvas)
+    public override void DoSettingsWindowContents(Rect inRect)
     {
         const float addHeight = 25f;
 
-        if (Widgets.ButtonText(new Rect(canvas.x + (canvas.width - 100f), canvas.y, 100f, 20f),
+        if (Widgets.ButtonText(new Rect(inRect.x + (inRect.width - 100f), inRect.y, 100f, 20f),
                 "DSS.reset".Translate()))
         {
             DSSSettings.ResetToVanilla();
@@ -30,15 +30,15 @@ public class DSSMod : Mod
         if (currentVersion != null)
         {
             GUI.contentColor = Color.gray;
-            Widgets.Label(new Rect(canvas.x, canvas.y, canvas.width, 20f),
+            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 20f),
                 "DSS.currentversion".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        var borderRect = canvas;
+        var borderRect = inRect;
         borderRect.y += addHeight;
         borderRect.height -= addHeight;
-        var scrollContentRect = canvas;
+        var scrollContentRect = inRect;
         scrollContentRect.height = DSSSettings.DeepOreDefNames.Count * 220f;
         scrollContentRect.width -= 20;
         scrollContentRect.x = 0;
@@ -77,7 +77,7 @@ public class DSSMod : Mod
         lister.End();
         Widgets.EndScrollView();
 
-        base.DoSettingsWindowContents(canvas);
+        base.DoSettingsWindowContents(inRect);
     }
 
     public override void WriteSettings()
@@ -94,11 +94,6 @@ public class DSSMod : Mod
 
     public static void UpdateChanges()
     {
-        // *My own references, ignore*
-        // DefDatabase<HediffDef>.GetNamed("SmokeleafHigh").stages[0].capMods[0].offset = LLLModSettings.amountPenaltyConsciousness;
-        // HediffDef.Named("SmokeleafHigh").stages.Where((HediffStage stage) => stage.capMods.Any((PawnCapacityModifier mod) => mod.capacity == PawnCapacityDefOf.Consciousness)).First().capMods.Where((PawnCapacityModifier mod) => mod.capacity == PawnCapacityDefOf.Consciousness).First().offset = RSModSettings.amountCramped;
-        // ThingDef.Named("NEC_ReinforcedWall").statBases.Where((StatModifier statBase) => statBase.stat == StatDefOf.MaxHitPoints).First().value = RWModSettings.WallHitPoints;
-        // SRWSettings.ReinforcedWall.statBases.Where((StatModifier statBase) => statBase.stat == StatDefOf.MaxHitPoints).First().value = SRWSettings.WallHitPoints;
         if (!DSSSettings.DeepOreDefNames.Any())
         {
             return;
